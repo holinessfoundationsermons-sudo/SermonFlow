@@ -314,7 +314,29 @@
     }
 
   </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js"; 
+import { getAuth } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js"; 
+import { getStorage } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-storage.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDsRZxngcgG8a0-anxmtOcjTms3pL_0PSI",
+    authDomain: "sermonflow-90c51.firebaseapp.com",
+    projectId: "sermonflow-90c51",
+    storageBucket: "sermonflow-90c51.firebasestorage.app",
+    messagingSenderId: "515125688557",
+    appId: "1:515125688557:web:21aeb7a2b8268f734df4e4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig); 
+const auth = getAuth(app); 
+const storage = getStorage(app);
+</script>
 
 </body>
 </html>
